@@ -59,7 +59,7 @@ const loadData = async() => {
                         const abilities = detailData.abilities.map(a => a.ability.name).join(", ");
 
                         modalBody.innerHTML = `
-                            <h2>${detailData.name}</h2>
+                            <h2>${capitalize(detailData.name)}</h2>
                             <img src="${detailData.sprites.front_default}" alt="${detailData.name}">
                             <p><strong>Type:</strong> ${type}</p>
                             <p><strong>Abilities:</strong> ${abilities}</p>
